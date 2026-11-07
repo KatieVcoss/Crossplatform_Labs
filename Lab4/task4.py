@@ -60,7 +60,7 @@ class MemoryGameUI:
         tk.Button(btn_frame, text="Новая игра", font=("Arial", 12), command=self._restart).pack(expand=True, pady=10)
 
     def _on_card_click(self, index):
-        # Исключение возможности переверачивания 3-й карточки
+        # Исключение возможности переворачивания 3-й карточки
         if self._is_processing or len(self._flipped_cards) >= 2:
             return
 
